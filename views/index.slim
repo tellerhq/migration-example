@@ -2,6 +2,9 @@ h2.font-sans.text-xl.antialiased.text-gray-800.tracking-tight.mt-4 class="sm:tex
 p.mt-4.text-gray-700.antialiased.leading-relaxed.text-sm This example shows you how to run Plaid and Teller side-by-side to get the benefit of Teller's better reliability and performance while falling back to Plaid for institutions Teller doesn't yet support.
 p.mt-4.text-gray-700.antialiased.leading-relaxed.text-sm By hooking into the events API for Plaid Link we can attach an event listener to be notified when the end-user has selected an institution. If the selected institution is one supported by Teller we can dismiss Plaid's picker and load Teller's at the first insitution screen, bypassing Teller's consent and picker screens.
 
+h3.font-sans.text-xl.antialiased.text-gray-800.tracking-tight.mt-4 class="sm:text-2xl" Source code
+p.mt-4.text-gray-700.antialiased.leading-relaxed.text-sm The source for this example is available from <a class="text-blue-500 underline" href="https://github.com/tellerhq/migration-example">https://github.com/tellerhq/migration-example</a>.
+
 h3.font-sans.text-xl.antialiased.text-gray-800.tracking-tight.mt-4 class="sm:text-2xl" Test credentials
 p.mt-4.text-gray-700.antialiased.leading-relaxed.text-sm Use these test credentials for the any bank in the demo.
 p.mt-4.text-gray-700.antialiased.leading-relaxed.text-sm Teller will intercept enrollments in this demo for <span class="font-bold">Chase, Bank of America, Wells Fargo, Citi, Captial One, US Bank, and TD Bank</span>. Use the Teller test credentials for those and Plaid's for any other institution.
