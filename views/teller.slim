@@ -1,0 +1,20 @@
+h2.font-sans.text-2xl.antialiased.text-gray-800.tracking-tight.mt-4 = "You connected with Teller"
+
+div.mt-4.p-4.shadow.rounded
+  - @accounts.each do |account|
+    div.flex.justify-between.items-center
+      div
+        div = account["name"]
+        div.flex
+          == institution_logo(account)
+          div.mt-2.text-sm.text-gray-700.ml-3.font-light = mask(account["account_number"])
+      div.flex.flex-col.items-end
+        div.text-green-500 = "$#{account["balances"]["ledger"]}"
+        div.text-gray-500.text-sm.mt-1.font-light = "Available $#{account["balances"]["available"]}"
+
+    div.mt-4.border-t.border-gray-300.border-solid.pt-2
+      - transactions(account).each do |transaction|
+        div.mt-1.flex.justify-between.text-sm.text-gray-700.font-light
+          div = transaction["description"]
+          div.text-red-500 = transaction["amount"]
+
