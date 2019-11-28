@@ -2,13 +2,13 @@ h2.font-sans.text-2xl.antialiased.text-gray-800.tracking-tight.mt-4 = "You conne
 
 div.mt-4.p-4.shadow.rounded
   - @accounts.each do |account|
-    div.flex.justify-between.items-center
+    div class="sm:flex sm:justify-between sm:items-center"
       div
-        div = account["name"]
+        div. = account["name"]
         div.flex
           == institution_logo(account)
           div.mt-2.text-sm.text-gray-700.ml-3.font-light = mask(account["account_number"])
-      div.flex.flex-col.items-end
+      div class="sm:flex sm:flex-col sm:items-end mt-2"
         div.text-green-500 = "$#{account["balances"]["ledger"]}"
         div.text-gray-500.text-sm.mt-1.font-light = "Available $#{account["balances"]["available"]}"
 

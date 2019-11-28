@@ -1,8 +1,8 @@
-h2.font-sans.text-2xl.antialiased.text-gray-800.tracking-tight.mt-4 Migrate your app from Plaid to Teller
+h2.font-sans.text-xl.antialiased.text-gray-800.tracking-tight.mt-4 class="sm:text-2xl" Migrate your app from Plaid to Teller
 p.mt-4.text-gray-700.antialiased.leading-relaxed.text-sm This example shows you how to run Plaid and Teller side-by-side to get the benefit of Teller's better reliability and performance while falling back to Plaid for institutions Teller doesn't yet support.
 p.mt-4.text-gray-700.antialiased.leading-relaxed.text-sm By hooking into the events API for Plaid Link we can attach an event listener to be notified when the end-user has selected an institution. If the selected institution is one supported by Teller we can dismiss Plaid's picker and load Teller's at the first insitution screen, bypassing Teller's consent and picker screens.
 
-h3.font-sans.text-2xl.antialiased.text-gray-800.tracking-tight.mt-4 Test credentials
+h3.font-sans.text-xl.antialiased.text-gray-800.tracking-tight.mt-4 class="sm:text-2xl" Test credentials
 p.mt-4.text-gray-700.antialiased.leading-relaxed.text-sm Use these test credentials for the any bank in the demo.
 p.mt-4.text-gray-700.antialiased.leading-relaxed.text-sm Teller will intercept enrollments in this demo for <span class="font-bold">Chase, Bank of America, Wells Fargo, Citi, Captial One, US Bank, and TD Bank</span>. Use the Teller test credentials for those and Plaid's for any other institution.
 
@@ -10,14 +10,14 @@ div class="flex flex-row justify-between pt-8 sm:pl-16 sm:pr-16 pb-8"
   div.mt-4.mb-4
     h3.font-sans.text-xl.antialiased.text-gray-800.tracking-tight Teller
     ul
-      li.font-sans.text-l.antialiased.text-gray-800.tracking-tight Username: sandbox_user
-      li.font-sans.text-l.antialiased.text-gray-800.tracking-tight Password: password
+      li.font-sans.text-sm.antialiased.text-gray-800.tracking-tight class="sm:text-xl" Username: sandbox_user
+      li.font-sans.text-sm.antialiased.text-gray-800.tracking-tight class="sm:text-xl" Password: password
 
   div.mt-4.mb-4
     h3.font-sans.text-xl.antialiased.text-gray-800.tracking-tight Plaid
     ul
-      li.font-sans.text-l.antialiased.text-gray-800.tracking-tight Username: user_good
-      li.font-sans.text-l.antialiased.text-gray-800.tracking-tight Password: pass_good
+      li.font-sans.text-sm.antialiased.text-gray-800.tracking-tight class="sm:text-xl" Username: user_good
+      li.font-sans.text-sm.antialiased.text-gray-800.tracking-tight class="sm:text-xl" Password: pass_good
 
 button.bg-indigo-700.text-white.p-2.pl-4.pr-4.mt-6.rounded.block.mx-auto.shadow id="connect" Connect your bank accounts
 
